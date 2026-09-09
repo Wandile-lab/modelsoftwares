@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Project mockup 3">
+  <rect width="800" height="500" fill="#081733"/>
+  <g stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1">
+    <path d="M0 100h800M0 200h800M0 300h800M0 400h800M100 0v500M200 0v500M300 0v500M400 0v500M500 0v500M600 0v500M700 0v500"/>
+  </g>
+  <rect x="90" y="90" width="620" height="320" fill="#323236" stroke="#36CFF0" stroke-opacity="0.35"/>
+  <rect x="90" y="90" width="620" height="42" fill="#0D2146"/>
+  <circle cx="115" cy="111" r="5" fill="#36CFF0"/>
+  <circle cx="133" cy="111" r="5" fill="#FFFFFF" fill-opacity="0.3"/>
+  <rect x="112" y="158" width="240" height="18" fill="#FFFFFF" fill-opacity="0.85"/>
+  <rect x="112" y="190" width="330" height="10" fill="#FFFFFF" fill-opacity="0.35"/>
+  <rect x="112" y="210" width="290" height="10" fill="#FFFFFF" fill-opacity="0.2"/>
+  <rect x="112" y="250" width="140" height="34" fill="#36CFF0"/>
+  <rect x="470" y="158" width="200" height="126" fill="#0D2146" stroke="#36CFF0" stroke-opacity="0.4"/>
+  <path d="M470 320h200M470 344h140M112 320h300M112 344h240" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8"/>
+  <text x="672" y="392" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#36CFF0" text-anchor="end">03</text>
+</svg>

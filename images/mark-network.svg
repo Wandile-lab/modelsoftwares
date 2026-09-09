@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" aria-hidden="true">
+  <g fill="none" stroke="#36CFF0" stroke-width="2">
+    <path d="M80 500V120l220 200 220-200v380" />
+    <path d="M80 120h440M80 310h180M340 310h180M300 320v180" />
+    <path d="M80 500h440" opacity="0.4" />
+  </g>
+  <g fill="#36CFF0">
+    <circle cx="80" cy="120" r="9" />
+    <circle cx="520" cy="120" r="9" />
+    <circle cx="300" cy="320" r="9" />
+    <circle cx="80" cy="500" r="7" />
+    <circle cx="520" cy="500" r="7" />
+    <circle cx="300" cy="500" r="5" />
+    <circle cx="80" cy="310" r="5" />
+    <circle cx="520" cy="310" r="5" />
+  </g>
+</svg>
