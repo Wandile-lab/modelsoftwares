@@ -157,7 +157,16 @@
           <div class="reveal">
             <div class="form">
               <span class="eyebrow" style="margin-bottom: 24px;">Project enquiry</span>
-              <form id="contact-form" novalidate>
+              <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+
+                <!-- Replace with your Access Key from web3forms.com -->
+                <input type="hidden" name="access_key" value="bb9a7a0e-4151-45db-a5b1-3f442638abef">
+
+                <!-- Optional: Email subject line -->
+                <input type="hidden" name="subject" value="New Project Enquiry — Model Softwares">
+
+                <!-- Anti-spam honeypot (keep hidden) -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                 <div class="form-row">
                   <div class="field">
