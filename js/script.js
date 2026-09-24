@@ -241,7 +241,17 @@
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      console.log('1. Submit event triggered!'); // <--- Debug log
       var valid = true;
+
+      if (!valid) {
+        console.log('2. Validation failed on one of the fields!'); // <--- Debug log
+        var first = form.querySelector('.field.has-error input, .field.has-error select, .field.has-error textarea');
+        if (first) first.focus();
+        return;
+      }
+
+      console.log('3. Validation passed! Sending fetch request...'); // <--- Debug log
 
       form.querySelectorAll('.field').forEach(function (field) {
         var input = field.querySelector('input, select, textarea');
@@ -293,8 +303,14 @@
           'Accept': 'application/json'
         }
       })
-        .then(function (res) { return res.json(); })
+        .then(function (res) {
+          console.log('Response status code:', res.status);
+          return res.json();
+        })
+
         .then(function (data) {
+          console.log('Web3Forms returned data:', data);
+
           if (data.success) {
             if (status) {
               status.classList.add('is-visible');
@@ -310,7 +326,8 @@
             }
           }
         })
-        .catch(function () {
+        .catch(function (err) {
+          console.error('Fetch caught an error:', err);
           if (status) {
             status.classList.add('is-visible');
             status.textContent = 'Unable to send. Please email us at modelsoftwares@outlook.com';
